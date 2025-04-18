@@ -27,7 +27,7 @@ app.post("/api/message", (req, res) => {
   console.log("ESP32 sent:", message);
 
   // Emit message to connected clients
-  io.emit("esp-message", message);
+  io.emit("esp32-data"", message);
 
   res.status(200).json({ success: true });
 });

@@ -22,7 +22,7 @@ io.on("connection", (socket) => {
   });
 });
 
-app.post("/api/message", (req, res) => {
+app.post("/esp32", (req, res) => {
   const message = req.body.message;
   console.log("ESP32 sent:", message);
 
